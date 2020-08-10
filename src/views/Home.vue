@@ -57,7 +57,7 @@ export default {
     reg() {
       let data = { ...this.userForm }
       this.$axios.post('/reg', data).then(response => {
-        console.log(response, '没有吧')
+        console.log(response, '没有吧测试')
       })
     }
   }
