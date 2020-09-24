@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     onClick(ev) {
-
+      console.log(ev)
     }
   }
 }

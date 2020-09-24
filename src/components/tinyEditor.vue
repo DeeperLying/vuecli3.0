@@ -45,7 +45,14 @@ export default {
     },
     toolbar: {
       type: [String, Array],
-      default: 'undo redo |  formatselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | lists image media table | removeformat | code emoticons preview'
+      default: 'undo redo ' +
+        '|  formatselect ' +
+        '| bold italic forecolor backcolor ' +
+        '| alignleft aligncenter alignright alignjustify ' +
+        '| bullist numlist outdent indent ' +
+        '| lists image media table ' +
+        '| removeformat ' +
+        '| code emoticons preview'
     }
   },
   data () {
