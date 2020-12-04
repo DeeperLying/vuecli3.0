@@ -24,6 +24,11 @@ const routes = [
         path: 'publish',
         name: 'ArticlePublish',
         component: () => import('../views/article/articlePublish')
+      },
+      {
+        path: 'look',
+        name: 'ArticleLook',
+        component: () => import('../views/article/article')
       }
     ]
   }
