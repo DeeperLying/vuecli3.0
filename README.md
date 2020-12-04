@@ -1,4 +1,4 @@
-# project-name
+# study-vue-cli3.0
 
 ## Project setup
 ```
