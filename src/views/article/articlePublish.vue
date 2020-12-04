@@ -59,9 +59,9 @@ export default {
     TinymceEditor
   },
   methods: {
-    onClick(ev) {
+    onClick() {
     },
-    childEvent(articleHtml) {
+    childEvent() {
     },
     clearArticle() {
       this.$refs.editor.clear()
@@ -73,6 +73,12 @@ export default {
       console.log(data)
       saveArticle(data).then(response => {
         console.log(response)
+        if (response.code === 200) {
+          this.$message({
+            message: '恭喜你，文章发表成功',
+            type: 'success'
+          });
+        }
       })
     }
   }

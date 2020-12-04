@@ -53,6 +53,9 @@ export default {
         '| lists image media table ' +
         '| removeformat ' +
         '| code emoticons preview'
+    },
+    defaultSetting: {
+      type: Object
     }
   },
   data () {
@@ -97,7 +100,8 @@ export default {
           console.log('formData', formData)
 
           xhr.send(formData);
-        }
+        },
+        ...this.defaultSetting
       },
       myValue: this.value
     }
@@ -106,11 +110,13 @@ export default {
     tinymce.init({})
   },
   methods: {
-    onClick (e) {
+    onClick(e) {
       this.$emit('onClick', e, tinymce)
     },
     inputEvent(ev) {
-      console.log(ev)
+    },
+    clear() {
+      this.myValue = ''
     }
   },
   watch: {

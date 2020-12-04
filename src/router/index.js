@@ -26,11 +26,20 @@ const routes = [
         component: () => import('../views/article/articlePublish')
       },
       {
-        path: 'look',
+        path: 'look/:id',
         name: 'ArticleLook',
         component: () => import('../views/article/article')
+      },
+      {
+        path: 'list',
+        name: 'ArticleList',
+        component: () => import('../views/article/articleList')
       }
     ]
+  }, {
+    path: '*',
+    name: '404',
+    component: () => import(/* webpackChunkName: "about" */ '../views/404')
   }
 ]
 

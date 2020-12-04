@@ -28,6 +28,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
@@ -43,11 +44,23 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "indent": ["warn", 2],
-      "no-unused-vars": ["warn", {"args": "after-used"}]
+      "indent": [
+        "warn",
+        2
+      ],
+      "no-unused-vars": [
+        "warn",
+        {
+          "args": "after-used"
+        }
+      ],
+      "no-debugger": "off",
+      "no-console": "off"
     }
   },
-  "eslintignore": ["node_modules"],
+  "eslintignore": [
+    "node_modules"
+  ],
   "browserslist": [
     "> 1%",
     "last 2 versions",
